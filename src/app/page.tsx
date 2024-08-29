@@ -5,8 +5,6 @@ const Home = () => {
   return (
     <>
       <Header />
-      <Link href="/about">about</Link>
-      <Link href="/posts">posts</Link>
     </>
   );
 };

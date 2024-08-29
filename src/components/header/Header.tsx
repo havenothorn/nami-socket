@@ -1,9 +1,21 @@
-import { header } from "./styles.css";
+import Link from "next/link";
+import { header, logo, menu, nav } from "./styles.css";
 
 const Header = () => {
   return (
     <header className={header}>
-      <nav></nav>
+      <div className={logo}>
+        <img src="/logo.svg" alt="logo" />
+        <h1>Nami.Socket()</h1>
+      </div>
+      <nav className={nav}>
+        <Link href="/about" className={menu}>
+          about
+        </Link>
+        <Link href="/posts" className={menu}>
+          posts
+        </Link>
+      </nav>
     </header>
   );
 };
