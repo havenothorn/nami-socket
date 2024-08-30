@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import { GeistMono } from "geist/font/mono";
 
 export const metadata: Metadata = {
   title: "Nami-Socket",
@@ -15,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className={inter.className}>{children}</body>
+      <body className={GeistMono.className}>{children}</body>
     </html>
   );
 }
