@@ -5,12 +5,19 @@ export const header = style({
   height: "5rem",
   justifyContent: "space-between",
   borderBottom: "1px solid #ccc",
+  backgroundColor: "#F9FFDD",
 });
 
 export const logo = style({
   display: "flex",
   alignItems: "center",
   gap: "1rem",
+  paddingLeft: "1rem",
+});
+
+export const logoImg = style({
+  width: "4rem",
+  height: "4rem",
 });
 
 export const nav = style({
@@ -18,6 +25,7 @@ export const nav = style({
   justifyContent: "center",
   alignItems: "center",
   gap: "1rem",
+  paddingRight: "1rem",
 });
 
 export const menu = style({
